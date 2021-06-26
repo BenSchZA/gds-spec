@@ -1,4 +1,4 @@
-# Revision history for an-informal-spec
+# Revision history for gds-spec
 
 ## 0.1.0.0 -- YYYY-mm-dd
 

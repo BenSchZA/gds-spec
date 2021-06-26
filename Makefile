@@ -13,4 +13,4 @@ set-ghc:
 	ghcup set ghc $(ghc_version)
 
 run:
-	cabal run an-informal-spec
+	cabal run gds-spec
