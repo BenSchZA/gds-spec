@@ -54,7 +54,7 @@ simulation m initialState = take 10 (iterate (\s -> partialStateUpdate s (head m
 
 -- Model Configuration
 stateUpdateFunction :: StateUpdateFunction
-stateUpdateFunction a _ = (\x -> ("a", x)) $ (+) 1 $ fromMaybe 0 (Map.lookup "a" a)
+stateUpdateFunction s _ = (\v -> ("a", v)) $ (+) 1 $ fromMaybe 0 (Map.lookup "a" s)
 
 policyFunction :: PolicyFunction
 policyFunction _ = [("signal", 1)]
