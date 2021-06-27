@@ -14,3 +14,6 @@ set-ghc:
 
 run:
 	cabal run gds-spec
+
+test:
+	cabal build && cabal test

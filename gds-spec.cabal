@@ -22,13 +22,22 @@ maintainer:         ben@bitsofether.com
 extra-source-files: CHANGELOG.md
 
 executable gds-spec
-    main-is:          Main.hs
+    main-is:          README.lhs
 
     -- Modules included in this executable, other than Main.
     -- other-modules:
 
     -- LANGUAGE extensions used by modules in this package.
     -- other-extensions:
-    build-depends:    base ^>=4.14.1.0, containers == 0.6.2.1, sort == 1.0.0.0
+    build-depends:    base ^>=4.14.1.0, containers == 0.6.2.1, sort == 1.0.0.0, markdown-unlit
     hs-source-dirs:   .
     default-language: Haskell2010
+    ghc-options: -pgmL markdown-unlit
+    build-tool-depends: markdown-unlit:markdown-unlit
+
+test-suite readme
+  type:           exitcode-stdio-1.0
+  main-is:        README.lhs
+  build-depends:  base ^>=4.14.1.0, containers == 0.6.2.1, sort == 1.0.0.0, markdown-unlit
+  ghc-options:    -pgmL markdown-unlit
+  build-tool-depends: markdown-unlit:markdown-unlit
