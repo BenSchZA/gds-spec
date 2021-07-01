@@ -1,6 +1,6 @@
 # Generalized Dynamical Systems Spec
 
-This is an (informal) technical specification for Generalized Dynamical Systems.
+This is an (informal) technical specification for Generalized Dynamical Systems, based on https://github.com/cadCAD-org/spec.
 
 See [Generalized Dynamical Systems](https://hackmd.io/sHhp-CoUTf2SeZy6vJ8EcA?view) and [Semantic Disambiguation and Term Standardization for Generalized Dynamical Systems (GDS)](https://hackmd.io/4gxtBCKWRKSUHPUNa9PVJA) for inspiration.
 
